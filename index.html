@@ -2,16 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Precision Audit Analytics | Bamidele Adedeji</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Audit Analytics | Bamidele Adedeji, M.Sc.</title>
+    <style>
+        :root { --primary: #003366; --secondary: #f4f4f4; --text: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; padding: 3rem 1rem; text-align: center; }
+        .container { max-width: 1000px; margin: auto; padding: 2rem; }
+        h1 { margin: 0; font-size: 2.5rem; }
+        .subtitle { font-style: italic; opacity: 0.9; }
+        
+        .section-title { border-bottom: 2px solid var(--primary); padding-bottom: 10px; margin-top: 3rem; color: var(--primary); }
+        
+        /* The Project Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .card { background: var(--secondary); border-radius: 8px; padding: 1.5rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); border-top: 5px solid var(--primary); }
+        .card h3 { margin-top: 0; color: var(--primary); }
+        .btn { display: inline-block; background: var(--primary); color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; margin-top: 1rem; }
+        
+        .footer { text-align: center; padding: 2rem; background: #eee; margin-top: 4rem; font-size: 0.9rem; }
+    </style>
 </head>
-<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 100px; background-color: #f4f7f6; color: #333;">
-    <div style="background: white; padding: 50px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: inline-block; max-width: 600px;">
-        <h1 style="color: #2c3e50;">Precision Audit Analytics</h1>
-        <p style="font-size: 1.2em; color: #7f8c8d;">Expert Financial Auditing & Data Analytics Consulting</p>
-        <hr style="border: 0; height: 1px; background: #eee; margin: 30px 0;">
-        <p>Managed by <strong>Bamidele Adedeji</strong>, M.Sc. Economics</p>
-        <p style="color: #27ae60; font-weight: bold;">[ Iowa Sentinel: ACTIVE & MONITORING ]</p>
-        <p style="font-size: 0.9em; margin-top: 40px; color: #bdc3c7;">Portfolio Live: Delivering Enterprise Insights via Advanced Analytics.</p>
-    </div>
+<body>
+
+<header>
+    <h1>Precision Audit Analytics</h1>
+    <p class="subtitle">Expert Financial Auditing & Data Analytics Consulting</p>
+    <p><strong>Managed by Bamidele Adedeji, M.Sc. Economics</strong></p>
+</header>
+
+<div class="container">
+    
+    <section id="about">
+        <h2 class="section-title">Executive Summary</h2>
+        <p>With over twenty years of experience in financial problem-solving, I bridge the gap between traditional auditing and modern predictive analytics. My work leverages Python, Econometrics, and Business Intelligence to deliver high-integrity enterprise insights.</p>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Live Analytics Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Diabetes Shield</h3>
+                <p>A machine learning risk assessment application built with Streamlit and Scikit-learn to forecast health risks based on diagnostic data.</p>
+                <a href="https://diabetes-shield.streamlit.app/" target="_blank" class="btn">View Live App</a>
+            </div>
+
+            <div class="card">
+                <h3>CKD Predictor</h3>
+                <p>Advanced predictive modeling for Chronic Kidney Disease detection, utilizing optimized classification algorithms for medical forecasting.</p>
+                <a href="https://ckd-prediction.streamlit.app/" target="_blank" class="btn">View Live App</a>
+            </div>
+
+            <div class="card" style="border-top: 5px solid #ccc;">
+                <h3>New Project Coming Soon</h3>
+                <p>Currently processing Windows logs and financial datasets for upcoming risk assessment models.</p>
+                <span class="btn" style="background:#ccc">Under Development</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2 class="section-title">Academic Research</h2>
+        <ul>
+            <li><strong>The Merchant Bank Paradox:</strong> Submitted to CBN Journal of Applied Statistics.</li>
+            <li><strong>Structural Divergence in the Debt-Growth Nexus:</strong> Published dataset on Zenodo.</li>
+        </ul>
+    </section>
+
+</div>
+
+<div class="footer">
+    &copy; 2026 Precision Audit Analytics | Ibadan, Nigeria<br>
+    Hosted securely via GitHub Pages & Google Cloud DNS
+</div>
+
 </body>
 </html>
