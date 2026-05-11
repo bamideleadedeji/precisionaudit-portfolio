@@ -40,11 +40,27 @@
 
     <section id="projects">
         <h2 class="section-title">Live Analytics Projects</h2>
-        <div class="grid"><div class="card" style="border-top: 5px solid #e74c3c;">
-    <h3>Integrity Sentinel: Breach Detection</h3>
-    <p><strong>Status: Active Monitoring.</strong> Analyzed 18,871 Windows Security Logs. Detected a brute-force attack from IP <code>148.251.140.16</code> with 15,000+ failed login attempts.</p>
-    <p style="font-size: 0.85rem; color: #666;">Tech: Python, Forensic Log Analysis, Risk Scoring.</p>
-    <a href="#" class="btn" style="background: #e74c3c;">View Forensic Report</a>
+        <div class="grid"><div class="card" style="border-top: 5px solid #e74c3c; grid-column: span 2;">
+    <h3>Integrity Sentinel: Cyber-Audit & Breach Detection</h3>
+    
+    <div style="display: flex; gap: 15px; flex-wrap: wrap; margin: 1.5rem 0; justify-content: center;">
+        <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: 0.8rem; text-align: center; color: #666; margin-bottom: 5px;">Source Analysis: Attack Origin</p>
+            <img src="top_attacking_ips.png" alt="Attacking IPs" style="width: 100%; border-radius: 5px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        </div>
+        <div style="flex: 1; min-width: 300px;">
+            <p style="font-size: 0.8rem; text-align: center; color: #666; margin-bottom: 5px;">Target Analysis: Dictionary Attack Vectors</p>
+            <img src="targeted_usernames.png" alt="Targeted Usernames" style="width: 100%; border-radius: 5px; border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        </div>
+    </div>
+
+    <p><strong>Case Study:</strong> Real-time forensic analysis of 18,871 Windows Security Event Logs. This audit identified a persistent brute-force attempt originating from IP <code>148.251.140.16</code>, accounting for over 15,000 failed login attempts in a single window.</p>
+    
+    <p><strong>Auditor's Recommendation:</strong> Based on the frequency and pattern of the <em>Event ID 4625</em> logs, I implemented a zero-trust firewall policy to block the identified malicious IP ranges and initiated a password entropy review for the 'Admin' and 'User' accounts.</p>
+    
+    <p style="font-size: 0.85rem; color: #666;"><strong>Stack:</strong> Python (Pandas/Matplotlib), Windows Forensic Log Parsing, Cloud Infrastructure Security.</p>
+    
+    <a href="audit_sample.csv" class="btn" style="background: #e74c3c;">Download Raw Audit Sample</a>
 </div>
             <div class="card">
                 <h3>Diabetes Shield</h3>
